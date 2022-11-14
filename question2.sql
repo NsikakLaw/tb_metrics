@@ -1,3 +1,6 @@
+-- Assumptions
+-- 1. More than 24 hours work time is allowed, as far as the start time is 12 hours prior to the window start time i.e. '2022-04-15 09:00:00.000'
+-- 2. For clarity and cleaner results, we are calculating just the integer full hours worked i.e. (10.34 -> 10)
 with time_calculations as (
   select employee_id,
   first_name,
