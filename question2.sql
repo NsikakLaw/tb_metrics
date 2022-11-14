@@ -14,7 +14,7 @@ with time_calculations as (
 
   case
   	when end_time >= '2022-04-17 17:00:00.000' then '2022-04-17 17:00:00.000'
-  	when end_time <= '2022-04-17 17:00:00.000' then end_time
+  	when end_time <= '2022-04-17 17:00:00.000' and end_time >= '2022-04-15 09:00:00.000' then end_time
   	when end_time is null then
   		case
   			when start_time > '2022-04-15 09:00:00.000' then '2022-04-17 17:00:00.000'
