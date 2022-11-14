@@ -1,0 +1,5 @@
+# ignore
+venv/
+.pytest_cache/
+.idea/
+_pycache_/
